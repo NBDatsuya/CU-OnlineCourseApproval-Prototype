@@ -23,7 +23,7 @@ public class Global {
         try{
             if (connection == null || connection.isClosed()) {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                String url = "jdbc:mysql://localhost:3306/crtu_enroll?characterEncoding=utf-8&serverTimezone=GMT%2B8";
+                String url = "jdbc:mysql://localhost:3306/crtu_enroll_prototype?characterEncoding=utf-8&serverTimezone=GMT%2B8";
                 connection = DriverManager.getConnection(
                         url,
                         "root",

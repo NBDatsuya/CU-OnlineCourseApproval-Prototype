@@ -23,6 +23,8 @@ public class LoginFilter implements Filter {
         if(req.getSession().getAttribute("user") != null
                 || req.getRequestURI().endsWith("log")
                 || req.getRequestURI().endsWith("login")
+                || req.getRequestURI().endsWith(".css")
+                || req.getRequestURI().endsWith(".svg")
                 || req.getRequestURI().endsWith("login.jsp")) {
             chain.doFilter(req, response);
         }else{
